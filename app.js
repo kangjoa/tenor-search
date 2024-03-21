@@ -11,6 +11,8 @@ const Tenor = require('tenorjs').client({
 // App Setup
 const app = express();
 
+app.use(express.static('public'));
+
 // Middleware
 // Allow Express (our web framework) to render HTML templates and send them back to the client using a new function
 const handlebars = require('express-handlebars');
