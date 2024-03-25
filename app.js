@@ -36,7 +36,7 @@ app.set('views', './views');
 // Routes
 app.get('/', (req, res) => {
   // Handle the home page when we haven't queried yet
-  term = '';
+  term = 'dog';
   if (req.query.term) {
     term = req.query.term;
   }
